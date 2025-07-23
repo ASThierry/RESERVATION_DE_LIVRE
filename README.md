@@ -1,2 +1,3 @@
 # Biblioth-que
-Ce projet a pour bute de Modéliser un problème en UML et utiliser le concept de l'héritage en programmation orienter objet. 
+
+Se projet permet de creer une systeme de reservation d'une libre par un utilsateur dans une bibliotheque selon sans titre soit utilisateur gratuit ou utilisateur payant.

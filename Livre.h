@@ -1,9 +1,8 @@
 #include <iostream>
 #ifndef LIVRE_H
 #define LIVRE_H
-/**
- * Cette class permet de cree des livres.
- *
+/*
+  Cette class permet de cree des livres.
  */
  class Livre
  {
@@ -17,6 +16,11 @@
     Livre(std::string titre, std::string auteur,int annee_edition,float prix,bool status):_titre(titre),_auteur(auteur),_annee_edition(annee_edition),_prix(prix),_status(status){}
     ~Livre(){}
     void infoLivre();
+    std::string getTitre();
+    std::string getAuteur();
+    bool getStatus();
+    float getPrix();
+
  };
  
 

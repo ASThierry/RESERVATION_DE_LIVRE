@@ -5,9 +5,9 @@
  class Bibliotheque
  {
  protected:
- std::vector<Livre>& livres;
+ std::vector<Livre> _livres;
  public:
-    void ajouterLivre(Livre &nouvLivre);
+    void ajouterLivre(Livre nouvLivre);
     void afficheLivre();
     void afficheLivreLibre(bool status);
  };
