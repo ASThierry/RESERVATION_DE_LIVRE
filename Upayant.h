@@ -3,9 +3,12 @@
 #ifndef UPAYANT_H
 #define UPAYANT_H
 
- class Upayant
+ class Upayant:public Utilisateur
  {
-    bool peuAccederLivre(Livre livre);
+  public:
+    Upayant(std::string nom,std::string prenom, int age):Utilisateur(nom,prenom,age){};
+    ~Upayant(){};
+    bool peutAccederLivre();
  };
  
 #endif

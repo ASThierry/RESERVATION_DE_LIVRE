@@ -3,9 +3,12 @@
 #ifndef UGRATUIT_H
 #define UGRATUIT_H 
 
- class Ugratuit:Utilisateur
+ class Ugratuit:public Utilisateur
  {
-    bool peuAccederLivre(Livre livre);
+   public:
+      Ugratuit(std::string nom,std::string prenom, int age):Utilisateur(nom,prenom,age){};
+      ~Ugratuit(){};
+      bool peutAccederLivre();
  };
 
 #endif

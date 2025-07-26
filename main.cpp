@@ -1,6 +1,9 @@
 #include <iostream>
 #include "Livre.h"
 #include "Bibliotheque.h"
+#include "Ugratuit.h"
+#include "Upayant.h"
+#include "Utilisateur.h"
 
 int main(){
 
@@ -18,5 +21,16 @@ int main(){
     bb->ajouterLivre(*l3);
     bb->afficheLivre();
     bb->afficheLivreLibre(false);
+
+    // Creation d'utilisateur gratuit
+    Ugratuit ug1("Blabla","Noe",18);
+    // Affichage des livres d'on Noe peut  accéder
+    bb->afficheLivreLibre(ug1.peutAccederLivre());
+
+    // Creation d'utilisateur gratuit
+    Upayant ug2("GSG","Biston",18);
+    // Affichage des livres d'on Noe peut  accéder
+    bb->afficheLivreLibre(ug2.peutAccederLivre());
+    
 
 }
